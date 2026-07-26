@@ -281,73 +281,50 @@ nav a:hover{
 
 @media(max-width:768px){
 
+    header{
+        padding:15px;
+    }
 
-header{
+    .logo{
+        font-size:22px;
+    }
 
-    padding:15px;
+    nav a{
+        font-size:12px;
+    }
 
-}
+    .banner h1{
+        font-size:32px;
+    }
 
-
-
-.logo{
-
-    font-size:22px;
-
-}
-
-
-
-nav a{
-
-    font-size:12px;
-
-}
-
-
-
-.banner h1{
-
-    font-size:32px;
+    #listeCommandes{
+        width:95%;
+    }
 
 }
 
 
-
-#listeCommandes{
-
-    width:95%;
-
-}
+/* En dehors du media */
 
 .annuler{
 
-width:100%;
-
-padding:15px;
-
-margin-top:15px;
-
-border:none;
-
-border-radius:15px;
-
-background:#e53935;
-
-color:white;
-
-font-size:17px;
-
-font-weight:bold;
-
-cursor:pointer;
-
-transition:.3s;
+    width:100%;
+    padding:15px;
+    margin-top:15px;
+    border:none;
+    border-radius:15px;
+    background:#e53935;
+    color:white;
+    font-size:17px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
 
 }
 
+
 .annuler:hover{
 
-background:#c62828;
+    background:#c62828;
 
 }
