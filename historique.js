@@ -1,20 +1,12 @@
 const listeCommandes = document.getElementById("listeCommandes");
 
-
 let commandes = JSON.parse(localStorage.getItem("commandes")) || [];
-
-
-
 
 function afficherHistorique(){
 
-
     listeCommandes.innerHTML = "";
 
-
-
     if(commandes.length === 0){
-
 
         listeCommandes.innerHTML = `
 
@@ -32,172 +24,100 @@ function afficherHistorique(){
 
         `;
 
-
         return;
 
     }
 
-
-
-
-
-
     commandes.forEach((commande,index)=>{
-
 
         let articles = "";
 
-
-
         commande.articles.forEach(article=>{
-
 
             articles += `
 
-
             <div class="article-historique">
-
 
                 <img src="${article.image}">
 
-
                 <div>
 
-
-                    <h3>
-                    ${article.nom}
-                    </h3>
-
+                    <h3>${article.nom}</h3>
 
                     <p>
                     Taille : ${article.taille}
                     </p>
-
 
                     <p>
                     Prix :
                     ${Number(article.prix).toLocaleString("fr-FR")} FCFA
                     </p>
 
-
                 </div>
-
 
             </div>
 
-
             `;
-
 
         });
 
-
-
-
-
-
-
         listeCommandes.innerHTML += `
 
-
         <div class="commande-card">
-
 
             <h2>
             Commande #${index + 1}
             </h2>
 
-
-
-
             ${articles}
-
-
-
-
-
 
             <p>
             👤 Nom complet :
             ${commande.client}
             </p>
 
-
-
             <p>
             📞 Téléphone :
             ${commande.telephone}
             </p>
-
-
-
 
             <p>
             🏙️ Ville :
             ${commande.ville || "Non renseignée"}
             </p>
 
-
-
-
             <p>
             📍 Commune :
             ${commande.commune || "Non renseignée"}
             </p>
-
-
-
 
             <p>
             🏠 Adresse précise :
             ${commande.adresse || "Non renseignée"}
             </p>
 
-
-
-
             <p>
             💰 Prix des articles :
             ${Number(commande.prixArticles || 0).toLocaleString("fr-FR")} FCFA
             </p>
-
-
-
 
             <p>
             🚚 Prix livraison :
             ${Number(commande.livraison || 0).toLocaleString("fr-FR")} FCFA
             </p>
 
-
-
-
-
             <p>
             📅 Date :
             ${commande.date}
             </p>
 
-
-
-
-
-
             <div class="prix-total">
-
 
             Total :
             ${Number(commande.total).toLocaleString("fr-FR")}
             FCFA
 
-
             </div>
-
-
-
-
-
-
 
             <div class="statut">
 
@@ -205,26 +125,43 @@ function afficherHistorique(){
 
             </div>
 
-
-
-
+            ${
+            commande.statut === "Votre commande est en cours, attente de validation ⏳"
+            ?
+            `
+            <button class="annuler" onclick="annulerCommande(${index})">
+            ❌ Annuler la commande
+            </button>
+            `
+            :
+            ""
+            }
 
         </div>
 
-
-
         `;
-
-
 
     });
 
-
-
 }
 
+function annulerCommande(index){
 
+    if(!confirm("Voulez-vous vraiment annuler cette commande ?")){
+        return;
+    }
 
+    commandes.splice(index,1);
 
+    localStorage.setItem(
+        "commandes",
+        JSON.stringify(commandes)
+    );
+
+    alert("Commande annulée avec succès ✅");
+
+    afficherHistorique();
+
+}
 
 afficherHistorique();
