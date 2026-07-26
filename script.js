@@ -6,7 +6,7 @@ let produits = [
 {id:4, nom:"Robe noire soirée", prix:18000, image:"ima3.jpeg"},
 {id:5, nom:"Sac blanc tendance", prix:27500, image:"ima4.png"},
 
-{id:6, nom:"Ensemble femme moderne", prix:25000, image:"ima5.webp"},
+{id:6, nom:"Ensemble femme moderne", prix:16000, image:"ima5.webp"},
 {id:7, nom:"Chemise élégante", prix:6000, image:"chemise.webp"},
 {id:8, nom:"Pantalon classe", prix:8000, image:"IMG_1576.webp"},
 {id:9, nom:"Jean femme bleu", prix:6000, image:"IMG_1577.jpeg"},
