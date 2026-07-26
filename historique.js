@@ -126,7 +126,7 @@ function afficherHistorique(){
             </div>
 
             ${
-            commande.statut === "Votre commande est en cours, attente de validation ⏳"
+            commande.statut === "Votre commande est en cours, attente de validation...⏳"
             ?
             `
             <button class="annuler" onclick="annulerCommande(${index})">
