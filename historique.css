@@ -308,17 +308,33 @@ nav a:hover{
 
 .annuler{
 
-    width:100%;
-    padding:15px;
+    width:auto;
+
+    padding:12px 25px;
+
     margin-top:15px;
+
     border:none;
+
     border-radius:15px;
+
     background:#e53935;
+
     color:white;
+
     font-size:17px;
+
     font-weight:bold;
+
     cursor:pointer;
+
     transition:.3s;
+
+    display:block;
+
+    margin-left:auto;
+
+    margin-right:auto;
 
 }
 
@@ -326,5 +342,7 @@ nav a:hover{
 .annuler:hover{
 
     background:#c62828;
+
+    transform:scale(1.05);
 
 }
