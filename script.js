@@ -7,10 +7,10 @@ let produits = [
 {id:5, nom:"Sac blanc tendance", prix:17000, image:"ima4.png"},
 
 {id:6, nom:"Ensemble femme moderne", prix:25000, image:"ima5.webp"},
-{id:7, nom:"Chemise élégante", prix:12000, image:"images/produits/chemise.jpg"},
-{id:8, nom:"Pantalon classe", prix:15000, image:"images/produits/pantalon.jpg"},
-{id:9, nom:"Jean femme bleu", prix:18000, image:"images/produits/jean-bleu.jpg"},
-{id:10, nom:"Veste tendance", prix:30000, image:"images/produits/veste.jpg"},
+{id:7, nom:"Chemise élégante", prix:12000, image:"MG_1575.webp"},
+{id:8, nom:"Pantalon classe", prix:15000, image:"IMG_1576.webp"},
+{id:9, nom:"Jean femme bleu", prix:18000, image:"IMG_1577.jpeg"},
+{id:10, nom:"Veste tendance", prix:30000, image:"IMG_1578.webp"},
 
 {id:11, nom:"Robe fleurie", prix:16000, image:"images/produits/robe-fleurie.jpg"},
 {id:12, nom:"Robe longue élégante", prix:24000, image:"images/produits/robe-longue.jpg"},
