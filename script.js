@@ -24,7 +24,7 @@ let produits = [
 {id:19, nom:"T-shirt homme noire", prix:5000, image:"images (4) - Copie.jpg"},
 {id:20, nom:"costume et tailleur dame", prix:22000, image:"4e.jpg"},
 
-{id:21, nom:"T-shirt homme", prix::4500, image:"1 (2).jpg"},
+{id:21, nom:"T-shirt homme", prix:4500, image:"1 (2).jpg"},
 {id:22, nom:"T-shirt homme", prix:4000, image:"1 (3).jpg"},
 {id:23, nom:"T-shirt homme", prix:4000, image:"g1.jpg.webp"},
 {id:24, nom:"T-shirt homme", prix:5000, image:"pie.png"},
