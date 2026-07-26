@@ -12,8 +12,8 @@ let produits = [
 {id:9, nom:"Jean femme bleu", prix:18000, image:"IMG_1577.jpeg"},
 {id:10, nom:"Veste tendance", prix:30000, image:"IMG_1578.webp"},
 
-{id:11, nom:"Robe fleurie", prix:16000, image:"images/produits/robe-fleurie.jpg"},
-{id:12, nom:"Robe longue élégante", prix:24000, image:"images/produits/robe-longue.jpg"},
+{id:11, nom:"Robe fleurie", prix:16000, image:"IMG_1579.webp"},
+{id:12, nom:"Robe longue élégante", prix:24000, image:"IMG_1580.jpeg"},
 {id:13, nom:"T-shirt premium", prix:10000, image:"images/produits/tshirt.jpg"},
 {id:14, nom:"Pull doux femme", prix:14000, image:"images/produits/pull.jpg"},
 {id:15, nom:"Jupe mode", prix:13000, image:"images/produits/jupe.jpg"},
